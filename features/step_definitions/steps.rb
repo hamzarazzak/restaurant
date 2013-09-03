@@ -1,10 +1,8 @@
 Given(/^I am on website "(.*?)"$/) do |url|
   visit url
-  begin
-    wait_until_exists(@browser.div(:id => 'wheasdasde'))
-  rescue Exception => e
-  end
-   #visit url
+  #begin
+  #  wait_until_exists(@browser.div(:id => 'wheasdasde'))
+  # end
 end
 
 And(/I want food in "([^""]+)"/) do |area|
